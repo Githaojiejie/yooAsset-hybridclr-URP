@@ -1,0 +1,15 @@
+syntax = "proto3";
+package Game.JIT;
+
+message HeartMsg{
+    int64 time = 1;
+string name = 2;
+Test test = 3;
+}
+
+
+enum Test {
+  ONE = 1;
+  TWO = 2;
+}
+

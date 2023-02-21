@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
+  m_Name: AssetBundleCollectorSetting
+  m_EditorClassIdentifier: 
+  ShowPackageView: 0
+  EnableAddressable: 1
+  UniqueBundleName: 0
+  ShowEditorAlias: 0
+  Packages:
+  - PackageName: DefaultPackage
+    PackageDesc: 
+    Groups:
+    - GroupName: 3d
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameArt/Prefab
+        CollectorGUID: cceb877e06414a648926ca1230374a57
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+    - GroupName: shader
+      GroupDesc: 
+      AssetTags: shader
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameArt/ShaderVariants
+        CollectorGUID: 00781758c26692e40a9634ddeac838be
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackShaderVariants
+        FilterRuleName: CollectShaderVariants
+        AssetTags: 
+    - GroupName: scene
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameArt/Scene
+        CollectorGUID: 214f92124328c964798dd33a78bab85d
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+    - GroupName: ui
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameArt/UIAnim
+        CollectorGUID: ede1368ba1fd90949ba1a0b4c74c6970
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+      - CollectPath: Assets/GameArt/UIFont
+        CollectorGUID: 464727a15e4a7dc4d895346374432399
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+      - CollectPath: Assets/GameArt/UIImage
+        CollectorGUID: 30c57db62bb02a24590e7046d3a9e33a
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+      - CollectPath: Assets/GameArt/UISprite
+        CollectorGUID: 01865ad6f7c806147b6cb37f2d83bc96
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackTopDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+      - CollectPath: Assets/GameRes/UIPanel
+        CollectorGUID: 12d33f33f3a55224c9c747d7bffa1c68
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+    - GroupName: code
+      GroupDesc: 
+      AssetTags: code
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameRes/Code
+        CollectorGUID: 6674c282e63ae8b4f99c43c02ebc4708
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackRawFile
+        FilterRuleName: CollectAll
+        AssetTags: 

@@ -1,0 +1,24 @@
+package Game.JIT;
+
+message S2C_Login {   
+  required int32 id = 1;
+  required string psw = 2;
+
+  enum LoginType {
+    a = 0;
+    b = 1;
+    c = 2;
+  }
+
+  message LoginNumber { 
+    required string number = 1;
+    optional LoginType type = 2 [default = c]; // 值必须是枚举类型中的一个
+  }
+  repeated LoginNumber phones = 4;
+}
+
+message s2c_login_all {
+  repeated S2C_Login s2c_login = 1;
+}
+
+

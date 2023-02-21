@@ -1,0 +1,4 @@
+enum msgId // 定义消息ID
+{
+  S2C_Login = 1000;
+}
